@@ -1,0 +1,78 @@
+/*!
+ * Navbar Persistent Links  v1.0.0
+ * Copyright 2022 Codex Libra
+ * Licensed under MIT (https://github.com/codexlibra/navbar-persistent-links/blob/master/LICENSE)
+ */
+:root {
+	--color-navbar-font: #ffff;
+	--color-blue: #0d6efd;
+	--color-purple: #9c0dfd;
+	--color-pink: #fd0de6;
+	--color-red: #fd0d6e;
+	--color-blue-tints-n3: #4a92fe;
+	--color-purple-tints-n3: #b54afe;
+	--color-pink-tints-n3: #fe4aec;
+	--navbar-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.15);
+	--color-body: #f4f4f4;
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-body);
+}
+
+.navbar {
+	height: 65px;
+	width: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--color-blue);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	user-select: none;
+	box-shadow: var(--navbar-box-shadow);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+	max-width: 1366px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar-brand {
+	padding: 1.40em;
+	color: var(--color-navbar-font);
+	text-decoration: none;
+	font-weight: bold;
+}
+.navbar-logo {
+	display: flex;
+	height: 63px;
+	width: auto;
+	padding-right: 1.40em;
+}
+.navbar-list {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.navbar-link {
+	display: block;
+	text-decoration: none;
+	color: var(--color-navbar-font);
+	padding: 1.40em;
+}
+.navbar-link.active {
+	background-color: var(--color-red);	
+}
+.navbar-item:hover {
+	background-color: var(--color-blue-tints-n3);
+}
